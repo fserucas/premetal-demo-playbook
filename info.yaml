@@ -1,6 +1,10 @@
 ---
 - name: Message after Hash has changed
   ansible.builtin.debug:
+    msg: "✅ Automation started successfully on {{ inventory_hostname }}. Hash updated second try"
+
+- name: Message after Hash has changed
+  ansible.builtin.debug:
     msg: "✅ Automation started successfully on {{ inventory_hostname }}. Hash updated"
 
 - name: Display a simple welcome message
