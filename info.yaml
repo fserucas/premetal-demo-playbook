@@ -1,4 +1,8 @@
 ---
+- name: The change that matters
+  ansible.builtin.debug:
+    msg: "✅ Automation started successfully on {{ inventory_hostname }}. The Change that matters"
+
 - name: Message after Hash has changed
   ansible.builtin.debug:
     msg: "✅ Automation started successfully on {{ inventory_hostname }}. Hash updated second try"
